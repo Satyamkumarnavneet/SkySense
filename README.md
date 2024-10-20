@@ -1,15 +1,14 @@
 # SkySense
 
-This project is a real-time data processing system for monitoring weather conditions in major Indian metros. It provides summarized insights using rollups and aggregates, utilizing data from the OpenWeatherMap API.
+SkySense is a real-time web application for monitoring weather conditions in major Indian cities. It provides summarized insights using data from the OpenWeatherMap API and allows users to customize temperature units and alerts.
 
 ## Features
 
-- Real-time weather data retrieval for 6 Indian metros (Delhi, Mumbai, Chennai, Bangalore, Kolkata, Hyderabad)
-- Daily weather summaries with average, maximum, and minimum temperatures
-- Dominant weather condition calculation
-- User-configurable alerting system for temperature thresholds and specific weather conditions
-- Visualizations for daily weather summaries and historical trends
-
+- Real-time weather data retrieval for major Indian metros (Delhi, Mumbai, Chennai, Bangalore, Kolkata, Hyderabad)
+- Daily weather summaries including average, maximum, and minimum temperatures
+- Calculation of dominant weather conditions
+- User-configurable alert system for temperature thresholds and specific weather conditions
+  
 ## Prerequisites
 
 - Node.js (v14 or later)
@@ -19,9 +18,10 @@ This project is a real-time data processing system for monitoring weather condit
 ## Setup and Running
 
 1. Clone the repository:
-   ```
+   ```bash
    git clone https://github.com/Satyamkumarnavneet/SkySense
    cd SkySense
+
    ```
 
 2. Install dependencies:
@@ -29,9 +29,9 @@ This project is a real-time data processing system for monitoring weather condit
    npm install
    ```
 
-3. Create a `.env` file in the root directory and add your OpenWeatherMap API key:
+3. Set your API key in the src/services/WeatherService.ts file:
    ```
-   VITE_OPENWEATHERMAP_API_KEY=your_api_key_here
+   const API_KEY = 'your_api_key_here';
    ```
 
 4. Start the development server:
@@ -57,7 +57,6 @@ The built files will be in the `dist` directory.
 - **Vite**: Used as the build tool for its fast development server and optimized production builds.
 - **Tailwind CSS**: Utilized for rapid UI development with utility-first CSS.
 - **Axios**: Employed for making HTTP requests to the OpenWeatherMap API.
-- **Chart.js and react-chartjs-2**: Used for creating visualizations of weather data.
 - **Lucide React**: Chosen for its comprehensive set of customizable icons.
 
 ## Project Structure
@@ -68,18 +67,8 @@ The built files will be in the `dist` directory.
 - `src/config`: Configuration files, including city data
 - `src/App.tsx`: Main application component
 
-## Testing
-
-To run the tests, use the following command:
-
-```
-npm test
-```
 
 ## Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.
 
-## License
-
-This project is open source and available under the [MIT License](LICENSE).

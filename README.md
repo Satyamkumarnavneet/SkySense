@@ -29,7 +29,7 @@ SkySense is a real-time web application for monitoring weather conditions in maj
    npm install
    ```
 
-3. Set your API key in the src/services/WeatherService.ts file:
+3. Set your API key in the `src/services/WeatherService.ts` file:
    ```
    const API_KEY = 'your_api_key_here';
    ```

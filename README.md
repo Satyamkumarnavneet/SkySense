@@ -20,8 +20,8 @@ This project is a real-time data processing system for monitoring weather condit
 
 1. Clone the repository:
    ```
-   git clone https://github.com/yourusername/weather-monitoring-system.git
-   cd weather-monitoring-system
+   git clone https://github.com/Satyamkumarnavneet/SkySense
+   cd SkySense
    ```
 
 2. Install dependencies:
